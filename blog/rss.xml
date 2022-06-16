@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>AiCE Warp: AI Apps in Computer Vision Blog</title>
+        <link>https://cmkl-university.github.io/blog</link>
+        <description>AiCE Warp: AI Apps in Computer Vision Blog</description>
+        <lastBuildDate>Thu, 16 Jun 2022 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[Welcome to AiCE Warp]]></title>
+            <link>https://cmkl-university.github.io/blog/aice-warp-ai-vision-welcome</link>
+            <guid>aice-warp-ai-vision-welcome</guid>
+            <pubDate>Thu, 16 Jun 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Hello everyone! :-)]]></description>
+            <content:encoded><![CDATA[<p>Hello everyone! :-)</p><p>Welcome to AiCE Warp - <strong>AI Applications in Computer Vision</strong>.</p><p>In this competency, We'll explore how AI can be used to help computers <strong>"see"</strong> and perform various tasks on images or video streams We'll cover fundamental concepts of computer vision including basic image representations, manipulation and filtering. Through a series of hands-on exercises, you’ll learn about basic neural networks and deep learning concepts that can be used to solve computer vision tasks. You’ll also learn about the tools such as <strong>PyTorch</strong> that can be used to build or train your deep learning model and applications.</p>]]></content:encoded>
+            <category>hello</category>
+            <category>warp</category>
+        </item>
+    </channel>
+</rss>
