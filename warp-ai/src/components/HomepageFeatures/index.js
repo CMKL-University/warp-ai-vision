@@ -26,7 +26,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_mind_map_re_nlb6.svg').default,
     description: (
       <>
-        Learn about neural network architecture and how it can be used to solve image classification problem.
+        Learn about artificial neural network and how it can be used to solve simple classification problem.
       </>
     ),
   },
@@ -35,9 +35,9 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_image_viewer_re_7ejc.svg').default,
     description: (
       <>
-        The breakthrough model that sparked the modern AI revolution.
+        The breakthrough model that sparked modern AI revolution.
         Convolutional neural network is most commonly applied to computer vision
-        and help computer see with minimal manual intervention.
+        and helps computer see with minimal manual intervention.
       </>
     ),
   },
