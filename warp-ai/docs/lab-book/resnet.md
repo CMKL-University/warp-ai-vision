@@ -1,12 +1,14 @@
-# RESNET
+# Deep Residual Network (ResNet)
 
-**Deep residual networks pre-trained on ImageNet**
+In this section, we are going to use the pre-trained resnet18 on ImageNet from PyTorch to classify the input image.
+
+Import `torch` and `models` from TorchVision.
 ```python
 import torch
 import torchvision.models as models
 ```
 
-**Load the pre-trained resnet18 model from TorchVision**
+Load the pre-trained resnet18 model from TorchVision.
 ```python
 model = models.resnet18(pretrained=True)
 # other resnet model variants from torchvision 
@@ -18,7 +20,7 @@ model = models.resnet18(pretrained=True)
 print("Model loaded!")
 ```
 
-**Evaluate the pre-trained model**
+Evaluate the pre-trained model.
 ```python
 model.eval()
 ```
@@ -27,7 +29,7 @@ All pre-trained models expect input images normalized in the same way, i.e. mini
 
 ---
 
-***Optional***
+***Optional:***
 We can download an example image from the Pytorch website, but we have already downloaded all the data we need and stored it in the data directory, so we can skip this code section.
 
 ```python
@@ -39,7 +41,7 @@ except: urllib.request.urlretrieve(url, filename)
 
 ---
 
-**Load the `dog.jpg` image from data directory and preprocess the data.**
+Load the `dog.jpg` image from data directory and preprocess the data.
 ```python
 filename = "../data/dog.jpg" # path to data
 
@@ -58,20 +60,20 @@ input_tensor = preprocess(input_image)
 input_batch = input_tensor.unsqueeze(0) # create a mini-batch as expected by the model
 ```
 
-**Transfer the input and model to our GPU**
+Transfer the input and model to our GPU.
 ```python
 if torch.cuda.is_available():
     input_batch = input_batch.to('cuda')
     model.to('cuda')
 ```
 
-**Pass  `input_batch`  into our model**
+Pass  `input_batch`  into our model.
 ```python
 with torch.no_grad():
     output = model(input_batch)
 ```
 
-**Print the output**
+Print the output.
 ```python
 # Tensor of shape 1000, with confidence scores over Imagenet's 1000 classes
 print(output[0])
@@ -84,7 +86,7 @@ There are 1000 image classes in ImageNet. The probabilities of those classes are
 
 ---
 
-***Optional***
+***Optional: ***
 If you don’t have the ImageNet label on your machine, you can download it from this [link](https://raw.githubusercontent.com/pytorch/hub/master/imagenet_classes.txt).
 
 - `wget` is a command for retrieving content and files from various web servers.
@@ -95,14 +97,14 @@ wget https://raw.githubusercontent.com/pytorch/hub/master/imagenet_classes.txt
 
 ---
 
-**Read the categories from ImageNet label file and stores it as list.**
+Read the categories from ImageNet label file and stores it as list.
 ```python
 # Read the categories
 with open("imagenet_classes.txt", "r") as f:
     categories = [s.strip() for s in f.readlines()]
 ```
 
-**Show the top categories of our input image.**
+Show the top categories of our input image.
 ```python
 # Show top categories per image
 top5_prob, top5_catid = torch.topk(probabilities, 5)
@@ -112,7 +114,7 @@ for i in range(top5_prob.size(0)):
     print(categories[top5_catid[i]], top5_prob[i].item())
 ```
 
-**The output**
+## The output
 ```python
 Samoyed 0.8847386837005615
 Arctic fox 0.045728735625743866

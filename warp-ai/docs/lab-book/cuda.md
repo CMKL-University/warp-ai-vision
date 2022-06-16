@@ -1,9 +1,10 @@
-# CUDA
+# PyTorch with CUDA device
 
+## Introduction
 CUDA is a parallel computing platform and programming model created by NVIDIA. [CUDA](https://developer.nvidia.com/cuda-zone)
  helps developers speed up their applications by harnessing the power of GPU accelerators.
 
-## **Getting started with CUDA in PyTorch**
+## Getting started with CUDA in PyTorch
 
 `torch.cuda` packages support CUDA tensor types, that implement the same function as CPU tensors, but they utilize GPUs for computation.
 
@@ -60,4 +61,3 @@ print(model)
 This code will create the tensor and neural network model on our GPU. 
 
 > NOTE: Operations between 2 instances must be on the same device.
->
