@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'AiCE Warp: AI Apps in Computer Vision',
-  tagline: 'All-seeing AI',
+  title: 'AiCE Warp: AI Applications in Computer Vision',
+  tagline: 'Seeing the World through Computers\' Eyes',
   url: 'https://cmkl-university.github.io',
   baseUrl: '/warp-ai-vision/',
   onBrokenLinks: 'throw',
@@ -39,6 +39,10 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/CMKL-University/warp-ai-vision/tree/main/warp-ai',
+          exclude: [
+            '**/tutorial-basics/**',
+            '**/tutorial-extras/**',
+          ],
         },
         blog: {
           showReadingTime: true,
@@ -113,7 +117,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} CMKL University. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} CMKL University.`,
       },
       prism: {
         theme: lightCodeTheme,
