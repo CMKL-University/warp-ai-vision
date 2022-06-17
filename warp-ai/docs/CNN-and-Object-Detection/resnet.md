@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # Deep Residual Network (ResNet)
 
 In this section, we are going to use the pre-trained resnet18 on ImageNet from PyTorch to classify the input image.
@@ -124,3 +128,6 @@ Great Pyrenees 0.00464773690328002
 ```
 
 This mean our `dog.jpg` is likely to be Samoyed!
+
+**Acknowledgement**: The content of this chapter has been adapted from the original [PyTorch ResNet](https://pytorch.org/hub/pytorch_vision_resnet).
+
