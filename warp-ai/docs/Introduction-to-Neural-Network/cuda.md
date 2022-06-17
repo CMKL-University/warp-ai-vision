@@ -1,3 +1,6 @@
+---
+sidebar_position: 2
+---
 # PyTorch with CUDA device
 
 ## Introduction
@@ -61,3 +64,7 @@ print(model)
 This code will create the tensor and neural network model on our GPU. 
 
 > NOTE: Operations between 2 instances must be on the same device.
+
+**Additional resources about pytorch cuda ** : [CUDA SEMANTICS](https://pytorch.org/docs/stable/notes/cuda.html)
+
+**Acknowledgement**: The content of this document has been adapted from the original [PyTorch](https://pytorch.org/).

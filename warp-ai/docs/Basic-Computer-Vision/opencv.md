@@ -1,3 +1,6 @@
+---
+sidebar_position: 4
+---
 # Hough Line Transform in OpenCV
 
 ## Introduction to Hough Transform
@@ -82,3 +85,9 @@ cv.imwrite('../output/houghlines5.jpg',img)
 # cv.imshow("Lines",img) 
 # cv.waitKey(0)
 ```
+
+** Additional Resources :** 
+- [Hough Transform Carnegie Mellon University](https://www.cs.cmu.edu/~16385/s17/Slides/5.3_Hough_Transform.pdf)
+- [Probabilistic Hough Transform - Iain Macdonald](https://homepages.inf.ed.ac.uk/rbf/CVonline/LOCAL_COPIES/AV1011/macdonald.pdf)
+
+**Acknowledgement :**  The content of this document has been adapted from the original [Hough Line Transform](https://docs.opencv.org/5.x/d6/d10/tutorial_py_houghlines.html).

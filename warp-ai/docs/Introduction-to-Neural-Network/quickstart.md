@@ -1,3 +1,6 @@
+---
+sidebar_position: 3
+---
 # Classification and Neural Network using PyTorch
 
 ## Working with data
@@ -206,4 +209,4 @@ with torch.no_grad():
 > Read more about [Saving & Loading your model](https://pytorch.org/tutorials/beginner/basics/saveloadrun_tutorial.html).
 > 
 
-**Acknowledgement**: The content of this chapter has been adapted from the original [PyTorch quickstart](https://pytorch.org/tutorials/beginner/basics/quickstart_tutorial.html).
+**Acknowledgement**: The content of this document has been adapted from the original [PyTorch quickstart](https://pytorch.org/tutorials/beginner/basics/quickstart_tutorial.html).

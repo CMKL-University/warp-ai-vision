@@ -129,5 +129,5 @@ Great Pyrenees 0.00464773690328002
 
 This mean our `dog.jpg` is likely to be Samoyed!
 
-**Acknowledgement**: The content of this chapter has been adapted from the original [PyTorch ResNet](https://pytorch.org/hub/pytorch_vision_resnet).
+**Acknowledgement**: The content of this document has been adapted from the original [PyTorch ResNet](https://pytorch.org/hub/pytorch_vision_resnet).
 
