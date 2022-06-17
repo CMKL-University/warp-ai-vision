@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
-        <title>AiCE Warp: AI Apps in Computer Vision Blog</title>
+        <title>AiCE Warp: AI Applications in Computer Vision Blog</title>
         <link>https://cmkl-university.github.io/warp-ai-vision/blog</link>
-        <description>AiCE Warp: AI Apps in Computer Vision Blog</description>
+        <description>AiCE Warp: AI Applications in Computer Vision Blog</description>
         <lastBuildDate>Thu, 16 Jun 2022 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
