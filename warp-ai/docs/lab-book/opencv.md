@@ -43,6 +43,8 @@ for line in lines:
     y2 = int(y0 - 1000*(a))
     cv.line(img,(x1,y1),(x2,y2),(0,0,255),2)
 cv.imwrite('../output/houghlines3.jpg',img)
+# cv.imshow("Lines",img) 
+# cv.waitKey(0)
 ```
 
 ---
@@ -77,4 +79,6 @@ for line in lines:
     x1,y1,x2,y2 = line[0]
     cv.line(img,(x1,y1),(x2,y2),(0,255,0),2)
 cv.imwrite('../output/houghlines5.jpg',img)
+# cv.imshow("Lines",img) 
+# cv.waitKey(0)
 ```
