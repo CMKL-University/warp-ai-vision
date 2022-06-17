@@ -9,7 +9,7 @@ const config = {
   title: 'AiCE Warp: AI Apps in Computer Vision',
   tagline: 'All-seeing AI',
   url: 'https://cmkl-university.github.io',
-  baseUrl: '/',
+  baseUrl: '/warp-ai-vision/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
