@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>AiCE Warp: AI Apps in Computer Vision Blog</title>
-        <link>https://cmkl-university.github.io/blog</link>
+        <link>https://cmkl-university.github.io/warp-ai-vision/blog</link>
         <description>AiCE Warp: AI Apps in Computer Vision Blog</description>
         <lastBuildDate>Thu, 16 Jun 2022 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
@@ -10,7 +10,7 @@
         <language>en</language>
         <item>
             <title><![CDATA[Welcome to AiCE Warp]]></title>
-            <link>https://cmkl-university.github.io/blog/aice-warp-ai-vision-welcome</link>
+            <link>https://cmkl-university.github.io/warp-ai-vision/blog/aice-warp-ai-vision-welcome</link>
             <guid>aice-warp-ai-vision-welcome</guid>
             <pubDate>Thu, 16 Jun 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Hello everyone! :-)]]></description>
