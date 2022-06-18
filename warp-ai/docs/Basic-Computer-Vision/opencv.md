@@ -7,6 +7,13 @@ sidebar_position: 4
 
 The Hough Transform is a popular technique to detect any shape, if you can represent that shape in a mathematical form. It can detect the shape even if it is broken or distorted a little bit. We will see how it works for a line using OpenCV. 
 
+To use OpenCV in Python you need to install the openCV module using `conda` command.
+
+```bash
+conda install opencv
+```
+Now you can import the OpenCV to your python code.
+
 ```python
 import cv2 as cv
 import numpy as np
@@ -15,7 +22,7 @@ import numpy as np
 We read the sudoku.png that store in our data directory and convert it into gray scale. Next, we use `cv.Canny()` to detect the edge of the image.
 
 ```python
-img = cv.imread('../data/sudoku.png')
+img = cv.imread('path/to/sudoku.png')
 gray = cv.cvtColor(img,cv.COLOR_BGR2GRAY)
 edges = cv.Canny(gray,50,150,apertureSize = 3)
 ```
@@ -45,7 +52,7 @@ for line in lines:
     x2 = int(x0 - 1000*(-b))
     y2 = int(y0 - 1000*(a))
     cv.line(img,(x1,y1),(x2,y2),(0,0,255),2)
-cv.imwrite('../output/houghlines3.jpg',img)
+cv.imwrite('houghlines3.jpg',img)
 # cv.imshow("Lines",img) 
 # cv.waitKey(0)
 ```
@@ -61,7 +68,7 @@ In openCV we can perform the Probabilistic Hough Transform by using `cv.HoughLin
 ```python
 import cv2 as cv
 import numpy as np
-img = cv.imread('../data/sudoku.png')
+img = cv.imread('path/to/sudoku.png')
 gray = cv.cvtColor(img,cv.COLOR_BGR2GRAY)
 edges = cv.Canny(gray,50,150,apertureSize = 3)
 ```
@@ -81,7 +88,7 @@ The `cv.HoughLinesP()` function returns the line's two endpoints, whereas the `c
 for line in lines:
     x1,y1,x2,y2 = line[0]
     cv.line(img,(x1,y1),(x2,y2),(0,255,0),2)
-cv.imwrite('../output/houghlines5.jpg',img)
+cv.imwrite('houghlines5.jpg',img)
 # cv.imshow("Lines",img) 
 # cv.waitKey(0)
 ```

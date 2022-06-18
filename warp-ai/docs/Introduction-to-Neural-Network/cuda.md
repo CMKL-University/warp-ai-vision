@@ -3,6 +3,8 @@ sidebar_position: 2
 ---
 # PyTorch with CUDA device
 
+This document is for testing the CUDA device in PyTorch. You can skip this section if your machine is not [CUDA-capable](https://developer.nvidia.com/cuda-zone) system or do not require CUDA.
+
 ## Introduction
 CUDA is a parallel computing platform and programming model created by NVIDIA. [CUDA](https://developer.nvidia.com/cuda-zone)
  helps developers speed up their applications by harnessing the power of GPU accelerators.
