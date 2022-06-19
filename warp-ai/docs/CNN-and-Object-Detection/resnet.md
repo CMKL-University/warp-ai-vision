@@ -34,8 +34,9 @@ All pre-trained models expect input images normalized in the same way, i.e. mini
 ---
 
 ***Optional:***
-We can download an example image from the Pytorch website, but we have already downloaded all the data we need and stored it in the data directory, so we can skip this code section.
+For this tutorial, we can use an example image from Pytorch or our own image.
 
+To download the image from PyTorch, run the below section of code.
 ```python
 import urllib
 url, filename = ("https://github.com/pytorch/hub/raw/master/images/dog.jpg", "data/dog.jpg")
@@ -45,9 +46,9 @@ except: urllib.request.urlretrieve(url, filename)
 
 ---
 
-Load the `dog.jpg` image from data directory and preprocess the data.
+Load the `dog.jpg` or your image from data directory and preprocess the data.
 ```python
-filename = "../data/dog.jpg" # path to data
+filename = "dog.jpg" # To try with other image, change this filename
 
 # sample execution (requires torchvision)
 from PIL import Image
@@ -64,7 +65,7 @@ input_tensor = preprocess(input_image)
 input_batch = input_tensor.unsqueeze(0) # create a mini-batch as expected by the model
 ```
 
-Transfer the input and model to our GPU.
+If your machine is CUDA capable, it will transfer the input and model to your GPU.
 ```python
 if torch.cuda.is_available():
     input_batch = input_batch.to('cuda')
@@ -95,7 +96,7 @@ If you don’t have the ImageNet label on your machine, you can download it from
 
 - `wget` is a command for retrieving content and files from various web servers.
 
-```python
+```bash
 wget https://raw.githubusercontent.com/pytorch/hub/master/imagenet_classes.txt
 ```
 
