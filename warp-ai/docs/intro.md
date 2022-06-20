@@ -52,7 +52,7 @@ zlib                      1.2.12               h5a0b063_2
 
 When you work on different projects, they may require different packages or dependencies. Conda (or mamba) can help you manage multiple package environments associated with each project.
 
-Setting up a different project `elderwarp` with Python 3.9 and switchรืเ to the new environment.
+Setting up a different project `elderwarp` with Python 3.9 and switch to the new environment.
 ```bash
 conda create -n elderwarp python=3.9
 conda activate elderwarp
