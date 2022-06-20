@@ -7,19 +7,21 @@ sidebar_position: 4
 
 The Hough Transform is a popular technique to detect any shape, if you can represent that shape in a mathematical form. It can detect the shape even if it is broken or distorted a little bit. We will see how it works for a line using OpenCV. 
 
-To use OpenCV in Python you need to install the openCV module using `conda` command.
+To use OpenCV in Python, you need to install the openCV module using `conda` command.
 
 ```bash
 conda install opencv
 ```
-Now you can import the OpenCV to your python code.
+Now you can import OpenCV into your Python code.
 
 ```python
 import cv2 as cv
 import numpy as np
 ```
 
-We read the sudoku.png that store in our data directory and convert it into gray scale. Next, we use `cv.Canny()` to detect the edge of the image.
+We read the sudoku.png that store in your directory and convert it into gray scale. Next, we use `cv.Canny()` to detect the edge of the image.
+
+> For sudoku.png, you can choose any from [Google](https://www.google.com/search?q=sudoku+opencv&tbm=isch&ved=2ahUKEwiFncf3wrv4AhX6hNgFHcBeD6kQ2-cCegQIABAA&oq=sudoku+opencv&gs_lcp=CgNpbWcQAzIFCAAQgAQyBQgAEIAEMgYIABAeEAg6CAgAEIAEELEDOgQIABAeOgYIABAeEAU6BAgAEBhQ4QFYvRVg4xZoAHAAeACAAXKIAYIFkgEDNy4xmAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=2COwYoXRDPqJ4t4PwL29yAo&bih=699&biw=1440). 
 
 ```python
 img = cv.imread('path/to/sudoku.png')
@@ -27,7 +29,7 @@ gray = cv.cvtColor(img,cv.COLOR_BGR2GRAY)
 edges = cv.Canny(gray,50,150,apertureSize = 3)
 ```
 
-We use `cv.HoughLines()` function to perform Hough Transform. It returns array of line parametees (rho, theta) values.
+We use `cv.HoughLines()` function to perform Hough Transform. It returns array of line parameters (rho, theta) values.
 
 - `edges` : binary edge detected image input
 - `1` : rho value
@@ -93,7 +95,10 @@ cv.imwrite('houghlines5.jpg',img)
 # cv.waitKey(0)
 ```
 
-** Additional Resources :** 
+Here are the tutorial for lane detection, one of the Hough Transform applications.
+- [Lane Detection Tutorial in OpenCV Python using Hough Transform](https://machinelearningknowledge.ai/lane-detection-tutorial-in-opencv-python-using-hough-transform/)
+
+**Additional Resources :** 
 - [Hough Transform Carnegie Mellon University](https://www.cs.cmu.edu/~16385/s17/Slides/5.3_Hough_Transform.pdf)
 - [Probabilistic Hough Transform - Iain Macdonald](https://homepages.inf.ed.ac.uk/rbf/CVonline/LOCAL_COPIES/AV1011/macdonald.pdf)
 
