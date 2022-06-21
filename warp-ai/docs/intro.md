@@ -18,7 +18,7 @@ Create a new working environment named `warp`.
 conda create -n warp python=3
 conda activate warp
 ```
-You can type the above commands into Command Prompt, Powershell, or any other integrated terminal of your code editor. If you are still looking for one, try **[warp](https://www.warp.dev/)** and **[startship](https://starship.rs/)** :-) 
+You can type the above commands into Command Prompt, Powershell, or any other integrated terminal of your code editor. If you are still looking for one, try **[warp](https://www.warp.dev/)** and **[starship](https://starship.rs/)** :-) 
 
 ## Verify your environment
 Verify that your environment has been setup.
