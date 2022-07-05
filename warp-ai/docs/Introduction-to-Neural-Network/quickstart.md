@@ -159,6 +159,14 @@ def test(dataloader, model, loss_fn):
 
 The training process is conducted over several iterations (*epochs*). During each epoch, the model learns parameters to make better predictions. We print the model’s accuracy and loss at each epoch; we’d like to see the accuracy increase and the loss decrease with every epoch.
 
+```python
+epochs = 5
+for t in range(epochs):
+    print(f"Epoch {t+1}\n-------------------------------")
+    train(train_dataloader, model, loss_fn, optimizer)
+    test(test_dataloader, model, loss_fn)
+print("Done!")
+```
 > Read more about [Training your model](https://pytorch.org/tutorials/beginner/basics/optimization_tutorial.html).
 > 
 
